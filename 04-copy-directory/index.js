@@ -19,4 +19,4 @@ function copyUpdatedDir(src, copy) {
   fs.rm(copy, { recursive: true, force: true }, () => copyDir(src, copy));
 }
 
-copyUpdatedDir(path.join(__dirname, '/files'), path.join(__dirname, '/files-copy'));
+copyUpdatedDir(path.join(__dirname, 'files'), path.join(__dirname, 'files-copy'));
